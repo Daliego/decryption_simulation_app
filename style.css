@@ -1,0 +1,73 @@
+:root {
+  --purple: #230f2b; /* Cor escura */
+  --red-primary: #f21d41; /* Cor vibrante */
+  --bright: #ebebbc; /* Cor clara */
+  --bg-primary: #bce3c5; /* Cor suave */
+  --bg-secondary: #82b3ae; /* Cor pastel */
+  font-family: "Open Sans", sans-serif;
+  color: var(--purple);
+}
+
+body {
+  background-color: var(--bg-primary);
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+.title {
+  margin: 0px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: var(--bg-secondary);
+}
+
+.smallTitle {
+  margin-left: 1rem;
+}
+
+.relative {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  /* right: 0%; */
+  /* top: calc(100vh - 50%); */
+}
+
+.mainWord {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+  top: 45%;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 60%;
+}
+
+.decryptButton {
+  padding: 0.5rem;
+  background-color: var(--purple);
+  color: var(--bg-primary);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  opacity: 1;
+}
+
+.decryptButton:hover {
+  /* color: var(--red-primary); */
+  cursor: pointer;
+  transition: transform 0.2s;
+  scale: 1.1;
+}
