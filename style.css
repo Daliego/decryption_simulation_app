@@ -42,11 +42,22 @@ body {
 }
 
 .mainWord {
+  display: flex;
   font-size: 3rem;
   width: 100%;
-  text-align: center;
-  justify-items: center;
+  justify-content: center;
   top: 45%;
+}
+
+.wordsContainer {
+  display: inherit;
+  width: 60%;
+  justify-content: center;
+}
+
+.wordToChange {
+  flex: 1;
+  text-align: center;
 }
 
 .buttonContainer {
@@ -57,12 +68,19 @@ body {
 }
 
 .decryptButton {
+  width: 25%;
   padding: 0.5rem;
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
   background-color: var(--purple);
   color: var(--bg-primary);
   border-radius: 10px;
   font-size: 1.5rem;
   opacity: 1;
+
+  @media (max-width: 480px) {
+    width: 50%;
+  }
 }
 
 .decryptButton:hover {
